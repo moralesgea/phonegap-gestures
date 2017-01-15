@@ -1,0 +1,111 @@
+body{
+    background-color: #8eadc5;
+}
+
+body.light{
+    background-color: #8de1bd;
+}
+
+body.dark{
+    background-color: #577a76;
+}
+
+button{
+    background-color: #7fba67;
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    padding: 30px;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+#gesture-zone{
+    width:100%;
+    background-color: #7fba67;
+    margin-top: 10px;
+    min-height: 300px;
+    display: block;
+}
+
+#info{
+    color: #ffffff;
+    font-size: 2em;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+#gesture-zone.tap{
+    -webkit-animation: bg-yellow 0.1s 1;
+}
+
+#gesture-zone.doubletap{
+    -webkit-animation: pulsacion 1.5s 1;
+}
+
+#gesture-zone.press{
+    -webkit-animation: presion 1.5s 1;
+}
+
+#gesture-zone.swipe-right{
+    -webkit-animation: swipe-right 3s 1;
+}
+
+#gesture-zone.swipe-left{
+    -webkit-animation: swipe-left 3s 1;
+}
+
+#gesture-zone.rotate{
+    -webkit-animation: rotate 3s 1;
+}
+
+@-webkit-keyframes bg-yellow{
+    0%, 100% {
+        background-color: #eaee7c;
+    }
+}
+
+@-webkit-keyframes pulsacion {
+    0%, 100% {
+        background-color: #7fba67;
+    }
+    50% {
+        background-color: #8de1bd;
+    }
+}
+
+@-webkit-keyframes presion {
+    0%, 100% {
+        background-color: #7fba67;
+    }
+    50% {
+        background-color: #577a76;
+    }
+}
+
+
+@-webkit-keyframes swipe-right {
+    0%, 100% {
+        margin-left: 0%;
+        width: 100%;
+    }
+    50% {
+        margin-left: 100%;
+        width: 0%;
+    }
+}
+
+@-webkit-keyframes swipe-left {
+    0%, 100% {
+        width: 100%;
+    }
+    50% {
+        width: 0%;
+    }
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "gestures",
+  "version": "1.0.0",
+  "description": "explorando gestures",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moralesgea/phonegap-gestures.git"
+  },
+  "keywords": [
+    "ecosystem:phonegap",
+    "ecosystem:cordova",
+    "cordova:template",
+    "phonegap:template"
+  ],
+  "author": "moralesgea",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://www.moralesgea.es"
+  },
+  "homepage": "https://www.moralesgea.es"
+}
